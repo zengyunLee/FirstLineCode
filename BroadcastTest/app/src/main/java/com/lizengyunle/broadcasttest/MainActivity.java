@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent("com.lizengyunle.broadcasttest.MY_BROADCAST");
-                sendBroadcast(intent);
+             //   sendBroadcast(intent);
+                sendOrderedBroadcast(intent,null);
             }
         });
     }

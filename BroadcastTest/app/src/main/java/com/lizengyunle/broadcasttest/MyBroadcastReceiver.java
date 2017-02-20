@@ -15,5 +15,6 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         // an Intent broadcast.
 //        throw new UnsupportedOperationException("Not yet implemented");
         Toast.makeText(context,"received in MyBroadcastReceiver",Toast.LENGTH_SHORT).show();
+        abortBroadcast();
     }
 }
